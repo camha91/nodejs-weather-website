@@ -5,11 +5,12 @@
   "main": "mongodb.js",
   "dependencies": {
     "kareem": "^2.3.1",
-    "mpath": "^0.6.0",
-    "mongoose-legacy-pluralize": "^1.0.2",
     "mongodb": "^3.5.0",
+    "mongoose-legacy-pluralize": "^1.0.2",
+    "mpath": "^0.6.0",
     "regexp-clone": "^1.0.0",
-    "sliced": "^1.0.1"
+    "sliced": "^1.0.1",
+    "validator": "^12.1.0"
   },
   "devDependencies": {},
   "scripts": {
