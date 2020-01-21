@@ -4,6 +4,7 @@
   "description": "",
   "main": "mongodb.js",
   "dependencies": {
+    "express": "^4.17.1",
     "kareem": "^2.3.1",
     "mongodb": "^3.5.0",
     "mongoose-legacy-pluralize": "^1.0.2",
@@ -12,9 +13,12 @@
     "sliced": "^1.0.1",
     "validator": "^12.1.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
   },
   "keywords": [],
   "author": "",
