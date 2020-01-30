@@ -4,6 +4,7 @@
   "description": "",
   "main": "mongodb.js",
   "dependencies": {
+    "bcrypt": "^3.0.7",
     "express": "^4.17.1",
     "kareem": "^2.3.1",
     "mongodb": "^3.5.0",
