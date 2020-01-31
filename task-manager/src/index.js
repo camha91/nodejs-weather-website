@@ -10,16 +10,14 @@ app.use(express.json())
 app.use(userRouter)
 app.use(taskRouter)
 
-const bcrypt = require('bcrypt')
+const jwt = require('jsonwebtoken')
 
 const myFunction = async () => {
-	const password = 'Green12345!'
-	const hashedPassword = await bcrypt.hash(password, 8)
-	
-	console.log(hashedPassword)
-	
-	const isMatch = await bcrypt.compare('Green12345!', hashedPassword)
-	console.log(isMatch)
+	const token = jwt.sign({ _id: 'abc123' }, 'thisismynodecourse', { expiresIn: '7 days' })
+	console.log(token)
+
+	const data = jwt.verify(token, 'thisismynodecourse')
+	console.log(data)
 }
 
 myFunction()
